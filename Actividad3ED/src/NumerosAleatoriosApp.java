@@ -37,6 +37,15 @@ public class NumerosAleatoriosApp {
 			System.out.println(i);
 		}
 
+		System.out.print("Añade un tercer número (sólo se mostrará si está entre los dos anteriores: ");
+		int numero3 = Integer.parseInt(sc.nextLine());
+
+		if ((numero3 >= numero) && (numero3 <= numero2)) {
+			System.out.println("El tercer número es: " + numero3);
+		} else {
+			System.out.println("El tercer número no está comprendido entre " + numero + " y " + numero2 + ".");
+		}
+
 	}
 
 }
